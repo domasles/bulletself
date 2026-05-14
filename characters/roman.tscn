@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://df74pioehw60c"]
+
+[ext_resource type="Texture2D" uid="uid://gxcoyfo6ap3u" path="res://assets/sprites/characters/roman/roman.png" id="1_b6ffb"]
+[ext_resource type="Script" uid="uid://cwvst8b3c018l" path="res://scripts/characters/roman/main.gd" id="1_wvd6w"]
+[ext_resource type="Script" uid="uid://dxuuoln4r4a1f" path="res://scripts/characters/roman/movement.gd" id="2_vxomb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvd6w"]
+atlas = ExtResource("1_b6ffb")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxomb"]
+atlas = ExtResource("1_b6ffb")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_63ynm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvd6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxomb")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b6ffb"]
+radius = 4.0
+
+[node name="Roman" type="CharacterBody2D" unique_id=1768595756]
+script = ExtResource("1_wvd6w")
+components = Array[Script]([ExtResource("2_vxomb")])
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1921484850]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_63ynm")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.92790073
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=393138438]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_b6ffb")
