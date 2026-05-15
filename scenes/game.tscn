@@ -10,9 +10,11 @@
 position = Vector2(0, -2)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=581324793]
-zoom = Vector2(4, 4)
+zoom = Vector2(3.5, 3.5)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=889337588]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=131408559]
 shape = SubResource("WorldBoundaryShape2D_uwrxv")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1716137000]

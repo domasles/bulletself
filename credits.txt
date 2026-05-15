@@ -1,4 +1,8 @@
 [Characters]
 Roman:
 Graphics created by Penzilla Design
-You can find their work at penzilla.itch.io
+You can find their work at https://penzilla.itch.io
+
+Anomaly 05:
+Graphics created by Dani Maccari
+You can find their work at https://dani-maccari.itch.io
