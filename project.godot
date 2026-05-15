@@ -52,6 +52,14 @@ player_run={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="enemy"
+2d_physics/layer_3="animal"
+2d_physics/layer_4="wall"
+2d_physics/layer_5="prop"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

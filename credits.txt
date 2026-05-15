@@ -1,8 +1,13 @@
 [Characters]
 Roman:
-Graphics created by Penzilla Design
+Made by Penzilla Design
 You can find their work at https://penzilla.itch.io
 
 Anomaly 05:
-Graphics created by Dani Maccari
+Made by Dani Maccari
 You can find their work at https://dani-maccari.itch.io
+
+[Tilesets]
+Laboratory outline:
+Made by ExceptRea
+You can find their work at https://exceptrea.itch.io
